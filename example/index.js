@@ -1,12 +1,12 @@
-import Search from '../src/Search'
+import Search from '../lib/Search' /* 'react-searchbox' */
 import ReactDOM from 'react-dom'
 import React, { Component } from 'react'
 
 class TestComponent extends Component {
-  clear(items) {
+  clear() {
     console.log('clearing...')
   }
-  search(items) {
+  search() {
     console.log('searching...')
   }
   change(key) {

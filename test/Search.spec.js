@@ -4,9 +4,7 @@ import React from 'react'
 import { mount } from 'enzyme'
 import Search from '../src/Search'
 
-test('Search component', (t) => {
-  setupJsdom()
-
+test('Search component', t => {
   const clear = () => {
     console.log('clear...')
   }
@@ -18,24 +16,20 @@ test('Search component', (t) => {
   }
 
   const wrapper = mount(
-    <Search inputName='my-input'
-            placeholder='Search for something...'
-            onClearClick={clear}
-            onSearchClick={search}
-            onKeyChange={change} />
+    <Search
+      inputName="my-input"
+      placeholder="Search for something..."
+      onClearClick={clear}
+      onSearchClick={search}
+      onKeyChange={change}
+    />
   )
 
-  t.pass(
-    expect(wrapper.props().placeholder).toEqual('Search for something')
-  )
+  t.pass(expect(wrapper.props().placeholder).toEqual('Search for something...'))
 
-  t.pass(
-    expect(wrapper.props().onSearchClick).toEqual(search)
-  )
+  t.pass(expect(wrapper.props().onSearchClick).toEqual(search))
 
-  t.pass(
-    expect(wrapper.props().onClearClick).toEqual(clear)
-  )
+  t.pass(expect(wrapper.props().onClearClick).toEqual(clear))
 
   t.end()
-});
+})

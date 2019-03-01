@@ -6,44 +6,47 @@ react-searchbox is a simple Searchbox component with events for keychange, searc
 
 ## Install
 
-`npm install react-searchbox --save`
+`yarn add react-searchbox`
 
 ## Usage
 
 ```jsx
 import Search from 'react-searchbox'
 import ReactDOM from 'react-dom'
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
 
 class TestComponent extends Component {
-
-  clear(items) {
+  clear() {
     console.log('clearing...')
-    console.log(items)
   }
-  search(items) {
+  search() {
     console.log('searching...')
-    console.log(items)
   }
-  change(items) {
+  change(key) {
     console.log('key change...')
-    console.log(items)
+    console.log(key)
   }
 
-  render () {
+  constructor(props) {
+    super(props)
+  }
+
+  render() {
     return (
-      <div>
-        <Search inputName='my-input'
-                placeholder='Search for something...'
-                onClearClick={this.clear.bind(this)}
-                onSearchClick={this.search.bind(this)}
-                onKeyChange={this.change.bind(this)} />
+      <div style={{ padding: '20px', maxWidth: '400px' }}>
+        <Search
+          inputName="my-input"
+          placeholder="Search for something..."
+          onClearClick={this.clear.bind(this)}
+          onSearchClick={this.search.bind(this)}
+          onKeyChange={this.change.bind(this)}
+        />
       </div>
     )
   }
 }
 
-ReactDOM.render( <TestComponent />, document.getElementById('root'))
+ReactDOM.render(<TestComponent />, document.getElementById('root'))
 ```
 
 ## Props

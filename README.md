@@ -74,11 +74,22 @@ Handler for the click event of the clear button, returns the search value.
 react-searchbox can be used with your own custom styles. A minimal [react-searchbox.css](https://github.com/StevenIseki/react-searchbox/blob/master/lib/react-searchbox.css) style sheet is included.
 
 ## Development
+    yarn
+    yarn dev
 
-    npm install
-    npm run build
-    npm test
-    npm start
+## Test
+    yarn test
+
+## Build
+    yarn
+    yarn build
+
+## Publish
+    npm login
+    npm version patch
+    git add -A
+    git push origin master
+    npm publish
 
 ## License
 

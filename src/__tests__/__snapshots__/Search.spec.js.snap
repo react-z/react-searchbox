@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search renders correctly and matches snapshot 1`] = `
+<div
+  className="sc-bdVaJa bJctIl"
+>
+  <input
+    autoCapitalize="none"
+    autoComplete="off"
+    autoCorrect="off"
+    className="sc-bwzfXH brkpEg"
+    maxLength="100"
+    name="my-input"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onKeyUp={[Function]}
+    placeholder="Search for something..."
+    type="text"
+  />
+  <span
+    className="sc-bxivhb lijCiP"
+    onClick={[Function]}
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+    >
+      <g
+        fill="currentColor"
+        fillRule="evenodd"
+      >
+        <path
+          d="M16.95 5.636l1.414 1.414L7.05 18.364 5.636 16.95z"
+        />
+        <path
+          d="M16.95 18.364l1.414-1.414L7.05 5.636 5.636 7.05z"
+        />
+      </g>
+    </svg>
+  </span>
+  <span
+    className="sc-htpNat kkCPXs"
+    onClick={[Function]}
+  >
+    <svg
+      fill="currentColor"
+      height="100%"
+      preserveAspectRatio="xMidYMid meet"
+      viewBox="0 0 24 24"
+      width="100%"
+    >
+      <g>
+        <path
+          d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+        />
+      </g>
+    </svg>
+  </span>
+</div>
+`;
